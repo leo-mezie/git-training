@@ -51,7 +51,12 @@
 //   return amount * rate;
 // }
 // console.log(calculateTax(100, 0.5));
-
+function calculateTax(amount, rate) {
+  if (typeof amount !== 'number' || typeof rate !== 'number') {
+    throw new Error('Invalid input: amount and rate must be numbers');
+  }
+  return amount * rate;
+}
 try {
   const result = calculateTax(100, 0.5);
   console.log(result);
