@@ -47,10 +47,10 @@
 // this is useful when querrying a database or making an API call, 
 // where errors can occur due to network issues or invalid data.
 
-// function calculateTax(amount, rate) {
-//   return amount * rate;
-// }
-// console.log(calculateTax(100, 0.5));
+function calculateTax(amount, rate) {
+  return amount * rate;
+}
+console.log(calculateTax(100, 0.5));
 
 try {
   const result = calculateTax(100, 0.5);
